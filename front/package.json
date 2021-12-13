@@ -1,0 +1,51 @@
+{
+  "name": "front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate && gulp",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "deploy": "echo evmos-erc20.giansalex.dev > static/CNAME && yarn generate && gh-pages -d dist -o origin",
+    "deploy-prod": "echo evmos-erc20.giansalex.dev > static/CNAME && nuxt generate && push-dir --remote origin --dir=dist --branch=gh-pages --cleanup"
+  },
+  "dependencies": {
+    "@myetherwallet/mewconnect-web-client": "^2.1.22",
+    "@nuxtjs/google-analytics": "^2.2.0",
+    "@portis/web3": "^2.0.0-beta.38",
+    "@walletconnect/web3-provider": "^1.3.3",
+    "authereum": "^0.0.4-beta.110",
+    "cross-env": "^5.2.0",
+    "dotenv": "8.2.0",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.2",
+    "gulp-html-minifier": "^0.1.8",
+    "nuxt": "2.14.7",
+    "nuxt-buefy": "^0.3.4",
+    "nuxt-validate": "^0.1.2",
+    "nuxt-web3-provider": "0.1.2",
+    "push-dir": "^0.4.1",
+    "remove-html-comments": "^1.0.2",
+    "web3": "1.0.0-beta.36"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-jest": ">=22.3.0",
+    "eslint-plugin-node": ">=8.0.1",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-promise": ">=4.0.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.1.0"
+  }
+}

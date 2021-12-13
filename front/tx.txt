@@ -1,0 +1,9 @@
+Metadata of "nationtoken" was published successfully.
+ipfs://QmTFhxKEVvARS7j7fMuq1pcJot1NGLfnFHXUpzxhERVQf3
+
+Metadata:
+ipfs://QmU4hnpsQUPadacbWVfaUuPtUGSrQdBctT3Gq9agkte269
+
+
+
+tx: 0x56556e0a96139877155afdccc7ba91ded40fe251266fe54534ca3749048ed358
